@@ -9,6 +9,14 @@ public class AppTest {
     public void testLengthOfTheUniqueKey() {
 
         sample.App obj = new sample.App();
+        Assert.assertEquals(37, obj.generateUniqueKey().length());
+
+    }
+
+    @Test
+    public void testLengthOfTheUniqueKeyShouldFail() {
+
+        sample.App obj = new sample.App();
         Assert.assertEquals(36, obj.generateUniqueKey().length());
 
     }
